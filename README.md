@@ -1,6 +1,6 @@
 ## PEACE Banking
 
-<img align="left" alt="Visual Studio Code" style="margin-bottom: 30px;" src="https://i.ibb.co/j9KJjS1/image-processing20220103-23137-qi6bzk.jpg" />
+<img align="left" alt="Visual Studio Code" style="margin-bottom: 30px;" src="https://i.ibb.co/v40qQWH/qwdqwdqwd.png" />
 
 
 <br>
@@ -26,34 +26,32 @@
 
 
 > necessario
-> NodeJS 10.8.1   [NodeJs]
+ NodeJS 10.8.1   [Node.Js]
 
 Instale as dependências globais:
 
 ```
-npm install  /  
-
+npm install  
 ```
-
 Inicie a alicação:
 
 ```
-npm start  /
-
+npm start  
 ```
-
 Acesse na url de seu browser:
 
 ```
 http://localhost:8080/login
-
 ```
 
+## copyright©2022 made with 💧 by Luis ;) 
 
 
+#crétodos
 
+> ps:
 
-Um alias de caminho '@' foi configurado no tsconfig.json e webpack.config.js que mapeia para o diretório '/src/app'. Isso permite que as importações sejam relativas à pasta '/src/app' prefixando o caminho de importação com '@', eliminando a necessidade de usar caminhos relativos longos como import MyComponent from '../../../MyComponent'.
+Resaltando que o (Path Aliases TS) '@' foi configurado no <kdd>tsconfig.json</kdd> e no <kdd>webpack.config.js</kdd> que ajuda a mapear para o diretório '[/src/app][/src/app]'. Isso permite que as importações sejam relativas à pasta '[/src/app][/src/app]' predeterminando o caminho das importações com '@', excluindo a necessidade de usar os caminhos relativos longos como por EX: <kdd>import MyComponent from '../../../MyComponent'</kdd>, e de que o "GitHub compilot" é uma mão na roda, apsear de não ter colamorado na criação da função EDITAR nos métodos HTTP... :( 
 
 
 
