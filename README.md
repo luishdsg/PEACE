@@ -7,7 +7,7 @@
 <br/>
 
 # Tecnologias utilizadas
-![Javascript red](https://img.shields.io/badge/-JavaScript-6633cc?style=flat-square&logo=JavaScript&logoColor=white) ![Typescript Badge](https://img.shields.io/badge/-Typescript-6633cc?style=flat-square&logo=Typescript&logoColor=white) ![AngularJs Badge](https://img.shields.io/badge/-AngularJS-6633cc?style=flat-square&logo=React&logoColor=white) ![Node Badge](https://img.shields.io/badge/-NodeJS-6633cc?style=flat-square&logo=Node.js&logoColor=white)  ![HTML Badge](https://img.shields.io/badge/-HTML-6633cc?style=flat-square&logo=HTML5&logoColor=white) ![CSS Badge](https://img.shields.io/badge/-CSS-6633cc?style=flat-square&logo=CSS3&logoColor=white) ![Webpack Badge](https://img.shields.io/badge/-Webpack-6633cc?style=flat-square&logo=CSS3&logoColor=white)
+![Javascript red](https://img.shields.io/badge/-JavaScript-6633cc?style=flat-square&logo=JavaScript&logoColor=white) ![Typescript Badge](https://img.shields.io/badge/-Typescript-6633cc?style=flat-square&logo=Typescript&logoColor=white) ![AngularJs Badge](https://img.shields.io/badge/-AngularJS-6633cc?style=flat-square&logo=React&logoColor=white) ![Node Badge](https://img.shields.io/badge/-NodeJS-6633cc?style=flat-square&logo=Node.js&logoColor=white)  ![HTML Badge](https://img.shields.io/badge/-HTML-6633cc?style=flat-square&logo=HTML5&logoColor=white) ![CSS Badge](https://img.shields.io/badge/-CSS-6633cc?style=flat-square&logo=CSS3&logoColor=white) ![Webpack Badge](https://img.shields.io/badge/-Webpack-6633cc?style=flat-square&logo=Webpack&logoColor=white)
 
 > especializações
 
