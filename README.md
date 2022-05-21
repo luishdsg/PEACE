@@ -44,16 +44,14 @@ Acesse na url de seu browser:
 http://localhost:8080/login
 ```
 
-## copyright©2022 made with 💧 by Luis ;) 
 
-
-#crétodos
+# crétodos
 
 > ps:
 
-Resaltando que o (Path Aliases TS) '@' foi configurado no <kdd>tsconfig.json</kdd> e no <kdd>webpack.config.js</kdd> que ajuda a mapear para o diretório '[/src/app][/src/app]'. Isso permite que as importações sejam relativas à pasta '[/src/app][/src/app]' predeterminando o caminho das importações com '@', excluindo a necessidade de usar os caminhos relativos longos como por EX: <kdd>import MyComponent from '../../../MyComponent'</kdd>, e de que o "GitHub compilot" é uma mão na roda, apsear de não ter colamorado na criação da função EDITAR nos métodos HTTP... :( 
+Resaltando que o (Path Aliases TS) '@' foi configurado no <kdd>tsconfig.json</kdd> e no <kdd>webpack.config.js</kdd> que ajuda a mapear para o diretório '[/src/app][/src/app]'. Isso permite que as importações sejam relativas à pasta '[/src/app][/src/app]' predeterminando o caminho das importações com '@', excluindo a necessidade de usar os caminhos relativos longos como por EX: (<kdd>import MyComponent from '../../../MyComponent'</kdd>) , e de que o "GitHub compilot" é uma mão na roda, apsear de não ter colamorado na criação da função EDITAR nos métodos HTTP... :( 
 
-
+## copyright©2022 made with 💧 by Luis ;) 
 
 
 
