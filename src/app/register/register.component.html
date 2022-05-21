@@ -1,0 +1,101 @@
+﻿<!-- DESKTOP VERSION -->
+<div class="container-peace">
+    <img src="https://i.ibb.co/j9KJjS1/image-processing20220103-23137-qi6bzk.jpg" alt="no image" />
+</div>
+<form class="page pb-5" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="left">
+            <div class="login">Registrar</div>
+            <div class="eula">criando sua conta você concorrera a um brinde surpresa dos nossos membros...pode conter qualquer coisa dentro do presente, desde imóveis á nada</div>
+        </div>
+        <div class="right r-r">
+            <div class="form">
+                <label for="primeiro">Primeiro Nome</label>
+                <input type="text" placeholder="primeiro nome" formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" id="primeiro" />
+                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                    <div *ngIf="f.firstName.errors.required">Primeiro nome é obrigatório</div>
+                </div>
+                <label for="ultimo">Ultimo nome</label>
+                <input type="text" placeholder="último nome" formControlName="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" id="ultimo" />
+                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                    <div *ngIf="f.lastName.errors.required">Último nome tabém é obrigatório</div>
+                </div>
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="nome de usuário" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="username" />
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Usuário é obrigatório</div>
+                </div>
+                <label for="password">Senha</label>
+                <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password" />
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Senha é obrigatória</div>
+                    <div *ngIf="f.password.errors.minlength">Senha deve conter no min 6 caractéres</div>
+                </div>
+                <button [disabled]="loading" id="submit" class="send" value="Submit">
+             Criar conta
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          </button>
+                <a routerLink="/login" class="btn btn-link">voltar e entrar</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+<!-- MOBILE VERSION -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" style="display: none;" class="back-all">
+    <div class="w-100 h-auto hello">
+        <h3>
+            Criando sua conta
+        </h3>
+        <p>Ao criar sua conta na PEACE banking, você concorda com os termos ridiculamente longos que nem se deu ao trabalho de ler
+        </p>
+    </div>
+    <div class="w-100 h-auto  form-space">
+        <input type="text" class="input-mob" placeholder="primeiro nome" formControlName="firstName" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors.required">Primeiro nome é obrigatório</div>
+        </div>
+        <input type="text" placeholder="último nome" class="input-mob" formControlName="lastName" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+        <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+            <div *ngIf="f.lastName.errors.required">Último nome tabém é obrigatório</div>
+        </div>
+        <input type="text" formControlName="username" class="input-mob" placeholder="nome de usuário" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Usuário é obrigatório</div>
+        </div>
+        <input type="password" class="input-mob" placeholder="crie sua senha" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Senha é obrigatória</div>
+            <div *ngIf="f.password.errors.minlength">Senha deve conter no min 6 caractéres</div>
+        </div>
+        <button [disabled]="loading" id="submit" class="send-mob text-white" value="Submit">
+            Criar conta
+           <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+        </button>
+    </div>
+    <p class="text-center aviso pt-2 pb-2 ">ou espere até ativarmos outras formas de LOGIN</p>
+    <div class="w-100 w-row h-auto d-flex">
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://www.designbust.com/download/28/png/google_logo_icon256.png" alt="not google" />
+            </div>
+        </div>
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://logospng.org/download/apple/logo-apple-256.png" alt="not apple" />
+            </div>
+        </div>
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://www.ifch.unicamp.br/publicacoes/pf-publicacoes/public-files/icones/facebook.png" alt="not facebook" />
+            </div>
+        </div>
+    </div>
+    <div class="w-100 h-auto mt-5 btn-link text-center">
+        <a routerLink="/Login" class="btn btn-link">Entre se já tiver conta</a>
+    </div>
+
+</form>

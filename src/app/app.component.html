@@ -1,0 +1,24 @@
+﻿<style>
+    .cards {
+        width: 96%;
+        margin: 2%;
+        height: auto;
+        padding: 1rem 2rem;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.375);
+        box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+</style>
+<nav class="navbar navbar-expand cards" *ngIf="currentUser">
+    <div class="navbar-nav" style="align-items:center;">
+        <a class="h-auto" style="align-self: center;">
+            <img class="w-25 h-auto" src="https://i.ibb.co/j9KJjS1/image-processing20220103-23137-qi6bzk.jpg" alt="no image" />
+        </a>
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" (click)="logout()">Sair</a>
+    </div>
+</nav>
+<alert></alert>
+<router-outlet></router-outlet>

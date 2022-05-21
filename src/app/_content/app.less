@@ -1,0 +1,211 @@
+// global application styles
+a {
+    cursor: pointer;
+}
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+@media (max-width: 768px) {
+  .form {
+    margin: 14px !important;
+  }
+}
+@media (max-width: 577px) {
+  .container-peace, .page{
+    display: none !important;
+  } 
+  .back-all {
+     display: block !important;  
+  }
+}
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 640px;
+}
+.container-peace{
+width: 100%;
+margin: 2% 0;
+align-items: center;
+text-align: center;
+height: auto;
+}
+.container-peace img{
+width: 50%;
+}
+
+.left {
+  background: rgb(235, 235, 235);
+  height: calc(100% - 40px);
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+  background: #474A59;
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+  height: 23rem;
+}
+
+.form input {
+  outline: none;
+  background-color: white !important;
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.r-r{
+  height: 35rem;
+}
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.send {
+  background: transparent;
+  border: 0;
+  color: #ffffff !important;
+  border-radius: 10rem;
+  border: 1px solid #0099ff;
+  font-size: 20px; 
+  padding: .5rem 0;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+.send:hover {
+  background: #00b8f042;
+}
+
+.send::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: #707075;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:focus {
+  color: #f2f2f2;
+}
+#submit:active {
+  color: #d0d0d2;
+}
+
+// mobile
+
+.back-all{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("https://cdn.wallpapersafari.com/87/15/4yiWdg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.form-space{
+    text-align: -webkit-center;
+}
+.hello{
+    text-align: -webkit-center;
+    padding: 14%;
+}
+.hello h3{
+    font-weight: 300;
+}
+.hello p{
+    font-weight: 200;
+    margin: 10% 0 -6%;
+}
+.input-mob{
+    outline: none;
+    background-color: white !important;
+    width: 85%;
+    padding: 17px 0px 17px 22px;
+    border: none;
+    border-radius: 10px;
+    margin: 2% 0;
+}
+.send-mob{
+    outline: none;
+    background: #1b7de3 !important;
+    width: 90%;
+    padding: 17px 0px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin: 2% 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contorno{
+    padding: 1rem;
+    text-align: -webkit-center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+.contorno img{
+    width: 60%;
+    height: auto;
+}
+.w-col{
+    padding: 0 1rem;
+}
+.aviso{
+    font-size: 10px !important; 
+}

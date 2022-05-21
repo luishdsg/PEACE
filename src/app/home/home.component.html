@@ -1,0 +1,102 @@
+﻿<style>
+    .blur {
+        background-image: url("https://jcsatanas.fr/wp-content/uploads/2016/04/fond-ecran-wallpaper-blur-ipad-32-300x300.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .table-l {
+        padding: 2rem;
+        font-size: 30px;
+        font-weight: 200;
+        text-align: -webkit-center;
+    }
+    
+    .info div img {
+        width: 70px;
+        height: 70px;
+        border-radius: 10rem;
+        border: 1px solid white;
+        padding: 4px;
+    }
+    
+    .cards {
+        width: 100%;
+        max-width: 1140px;
+        margin: 2% 0;
+        height: auto;
+        padding: 2rem;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.375);
+        box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    
+    .ex-co {
+        border-radius: 10rem;
+        padding: 1rem;
+        background: rgb(255, 0, 0);
+        color: white !important;
+        font-weight: 700;
+    }
+    
+    @media (max-width: 777px) {
+        .cards {
+            width: 100%;
+        }
+        .recado {
+            display: none;
+        }
+        .w-75 {
+            width: 100% !important;
+        }
+        .cards {
+            padding: 10px;
+        }
+        .p-5 {
+            padding: 1rem!important;
+        }
+        .info div img {
+            width: 57px;
+            height: 57px;
+            border-radius: 10rem;
+            border: 1px solid white;
+            padding: 4px;
+        }
+        .text-truncate {
+            font-size: 15px;
+        }
+        .txt-list {
+            display: block;
+        }
+    }
+</style>
+<!-- Recebe os dados dos usuários cadastrados -->
+<div class="w-100 h-100 blur position-absolute d-flex">
+    <div class="w-25 h-auto ml-4 cards recado table-l">
+        <p>Lista de todos os usuários e membros</p>
+    </div>
+    <div class="w-75 h-100 p-5 ">
+        <div class="info w-100 h-auto ">
+            <p style="display: none" class="table-l">Lista de todos os usuários e membros</p>
+            <div *ngFor="let user of users" class="cards row">
+                <div class="col-2">
+                    <img src="https://pbs.twimg.com/media/Ef21pT5UcAI2V4F.jpg" alt="no person" />
+                </div>
+                <div class="col-3 dates">
+                    <div>
+                        <div>
+                            <h3 class="d-inline-block text-truncate" style=" max-width: 150px;">{{user.username}}</h3>
+                        </div>
+                        <span class="d-inline-block text-truncate" style="max-width: 150px;"> {{user.firstName}}  {{user.lastName}}</span>
+                    </div>
+                </div>
+                <div class="col-7 text-right">
+                    <a (click)="deleteUser(user.id)" class="ex-co">Excluir-conta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

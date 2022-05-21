@@ -1,0 +1,76 @@
+﻿<!-- DESKTOP VERSION -->
+<div class="container-peace">
+    <img src="https://i.ibb.co/j9KJjS1/image-processing20220103-23137-qi6bzk.jpg" alt="no image" />
+</div>
+<form class="page" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="left">
+            <div class="login">Login</div>
+            <div class="eula">Ao fazer login, você concorda com os termos ridiculamente longos que nem se deu ao trabalho de ler</div>
+        </div>
+        <div class="right">
+            <div class="form">
+                <label for="email">Usuario</label>
+                <input type="text" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="email">
+                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Usuário obrigatório</div>
+                </div>
+                <label for="password">Senha</label>
+                <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required">Senha obrigatória</div>
+                </div>
+                <button [disabled]="loading" id="submit" class="send" value="Submit">
+                    Entrar
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                </button>
+                <a routerLink="/register" class="btn btn-link">ou Registre-se</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- MOBILE VERSION -->
+<form style="display: none;" class="back-all" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="w-100 h-auto hello">
+        <h3>
+            Olá de novo!
+        </h3>
+        <p>caso seja novo, Bem vindo!...venha fazer parte da PEACE banking</p>
+    </div>
+    <div class="w-100 h-auto  form-space">
+        <input class="input-mob" type="text" placeholder="usuario" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="email">
+        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Usuário obrigatório</div>
+        </div>
+        <input type="password" class="input-mob" placeholder="senha" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password">
+        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Senha obrigatória</div>
+        </div>
+        <button [disabled]="loading" class="send-mob" value="Submit">
+            Entrar
+           <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+         </button>
+    </div>
+    <p class="text-center aviso pt-2 pb-2 ">ou espere até ativarmos outras formas de LOGIN</p>
+    <div class="w-100 w-row h-auto d-flex">
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://www.designbust.com/download/28/png/google_logo_icon256.png" alt="not google" />
+            </div>
+        </div>
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://logospng.org/download/apple/logo-apple-256.png" alt="not apple" />
+            </div>
+        </div>
+        <div class="w-col">
+            <div class="contorno">
+                <img src="https://www.ifch.unicamp.br/publicacoes/pf-publicacoes/public-files/icones/facebook.png" alt="not facebook" />
+            </div>
+        </div>
+    </div>
+    <div class="w-100 h-auto mt-5 btn-link text-center">
+        <a routerLink="/register" class="btn btn-link">ou Registre-se</a>
+    </div>
+</form>
