@@ -4,7 +4,7 @@
 
 
 <br>
- O PEACE Banking é um exemplo de sistema simples de registro e login de usuário usando Angular 8, TypeScript e webpack 4.
+ O PEACE Banking é um exemplo de sistema simples de registro e login de usuário usando Angular 8, TypeScript e webpack 4 com responsividade mobile.
 </br>
 
 
