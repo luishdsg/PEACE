@@ -26,7 +26,7 @@
                     <div *ngIf="f.username.errors.required">Usuário é obrigatório</div>
                 </div>
                 <label for="password">Senha</label>
-                <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password" />
+                <input type="password" formControlName="password" placeholder="criar senha" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password" />
                 <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                     <div *ngIf="f.password.errors.required">Senha é obrigatória</div>
                     <div *ngIf="f.password.errors.minlength">Senha deve conter no min 6 caractéres</div>
