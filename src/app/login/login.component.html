@@ -11,12 +11,12 @@
         <div class="right">
             <div class="form">
                 <label for="email">Usuario</label>
-                <input type="text" formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="email">
+                <input type="text" formControlName="username" placeholder="usuario" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" id="email">
                 <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
                     <div *ngIf="f.username.errors.required">Usuário obrigatório</div>
                 </div>
                 <label for="password">Senha</label>
-                <input type="password" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password">
+                <input type="password" formControlName="password" placeholder="senha" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="password">
                 <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                     <div *ngIf="f.password.errors.required">Senha obrigatória</div>
                 </div>
