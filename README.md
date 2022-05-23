@@ -14,11 +14,11 @@
 
 > Resumo
 
-   O modelo criado usa o Webpack 4 para transpilar o código TypeScript e agrupar os módulos do Angular 8, e o servidor webpack-dev é usado como um backend falso que armazena os usuários no armazenamento local, O projeto e a estrutura de código seguem principalmente as recomendações de melhores práticas no Guia de Estilos do "Angular oficial"
+   O modelo criado usa o Webpack 4 para transpilar o código TypeScript e agrupar os módulos do Angular 8, e o servidor webpack-dev é usado como um backend falso que armazena os dados dos usuários no LocalHost, O projeto e a estrutura de código seguem principalmente as recomendações das melhores práticas no Guia de Estilos do "Angular oficial"
     
 > especializações
     
-   A estrutura do projeto tem uma pasta por recurso, (home, login e registro), enquanto outro código compartilhado/comum tem os (serviços, modelos, conteúdo, componentes e auxiliares) e coloquei-os em pastas prefixadas com um sublinhado "_" para diferenciar facilmente entre código compartilhado e código específico do recurso, o prefixo também agrupa pastas de componentes compartilhados na parte superior da estrutura de pastas, Pois Os arquivos <kbd>index.ts</kbd> em cada pasta são arquivos "Barriel files" que agrupam os módulos exportados de uma pasta para que podem ser importados usando o caminho da pasta em vez do caminho completo do módulo, e para permitir a importação de vários módulos em uma única importação, (por exemplo <kdd>import { AlertService, UserService, AuthenticationService } from '@/_services', )</kdd> .
+   A estrutura do projeto tem uma pasta por recurso, (home, login e registro), enquanto outro código compartilhado/comum tem os (serviços, modelos, conteúdo, componentes e auxiliares) eu coloquei-os em pastas prefixadas com um sublinhado "_" para diferenciar facilmente entre código compartilhado e código específico do recurso, o prefixo também agrupa pastas de componentes compartilhados na parte superior da estrutura de pastas, Pois Os arquivos <kbd>index.ts</kbd> em cada pasta são arquivos "Barriel files" que agrupam os módulos exportados de uma pasta para que podem ser importados usando o caminho da pasta em vez do caminho completo do módulo, e para permitir a importação de vários módulos em uma única importação, por EX: <kbd>import{AlertService,UserService,AuthenticationService}from'@/_services',</kbd> .
    
    
    
@@ -49,7 +49,7 @@ http://localhost:8080/login
 
 > ps:
 
-Resaltando que o (Path Aliases TS) '@' foi configurado no <kdd>tsconfig.json</kdd> e no <kdd>webpack.config.js</kdd> que ajuda a mapear para o diretório '[/src/app][/src/app]'. Isso permite que as importações sejam relativas à pasta '[/src/app][/src/app]' predeterminando o caminho das importações com '@', excluindo a necessidade de usar os caminhos relativos longos como por EX: (<kdd>import MyComponent from '../../../MyComponent'</kdd>) , e de que o "GitHub compilot" é uma mão na roda, apsear de não ter colamorado na criação da função EDITAR nos métodos HTTP... :( 
+Resaltando que o (Path Aliases TS) '@' foi configurado no <kbd>tsconfig.json</kbd> e no <kbd>webpack.config.js</kbd> que ajuda a mapear para o diretório [/src/app]. Isso permite que as importações sejam relativas à pasta <kbd>/src/app</kbd>' predeterminando o caminho das importações com '@', excluindo a necessidade de usar os caminhos relativos longos como por EX: (<kbd>import MyComponent from '../../../MyComponent'</kbd>) , e de que o "GitHub compilot" é uma mão na roda, apsear de não ter colaborado na criação da função PUNCH/UPDATE nos métodos HTTP... :( 
 
 ## copyright©2022 made with 💧 by Luis ;) 
 
